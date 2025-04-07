@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.2</version>
+        <version>3.4.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tiendag4</groupId>
-    <artifactId>tiendag4</artifactId>
+    <groupId>com.tiendaRep</groupId>
+    <artifactId>tiendaRep</artifactId>
     <version>1</version>
-    <name>tiendag4</name>
-    <description>Proyecto final G4</description>
+    <name>tiendaRep</name>
+    <description>Proyecto Tienda para Repuestos Motocicleta</description>
     <properties>
         <java.version>23</java.version>
         <maven.compiler.release>17</maven.compiler.release>
@@ -82,6 +82,18 @@
             <artifactId>firebase-admin</artifactId>
             <version>9.4.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.thymeleaf.extras</groupId>
+            <artifactId>thymeleaf-extras-springsecurity6</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -110,4 +122,5 @@
             </plugin>  
         </plugins>
     </build>
+
 </project>
